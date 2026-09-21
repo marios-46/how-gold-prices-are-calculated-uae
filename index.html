@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How Gold Prices Are Calculated in the UAE</title>
+
+  <meta name="description" content="Learn how gold prices are calculated in the UAE, including ounce-to-gram conversion, karat purity, AED exchange rates, making charges, and VAT.">
+
+  <meta name="keywords" content="how gold prices are calculated in UAE, UAE gold price calculation, gold price per gram UAE, gold price AED, Dubai gold price calculation, 24K gold price UAE, gold purity UAE, gold making charges UAE">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --forest: #103c36;
+      --forest-dark: #092b27;
+      --emerald: #16705f;
+      --turquoise: #2a9d8f;
+      --sand: #f6efe2;
+      --cream: #fffaf1;
+      --gold: #c99135;
+      --gold-light: #e4bd70;
+      --ink: #26312f;
+      --muted: #68736f;
+      --white: #ffffff;
+      --border: #e6dccb;
+      --soft-green: #eaf4f0;
+      --soft-gold: #fbf3df;
+      --soft-blue: #eaf7f5;
+      --danger: #9a5149;
+      --shadow: 0 18px 45px rgba(16, 60, 54, 0.10);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--emerald);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(1140px, calc(100% - 34px));
+      margin: auto;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(228,189,112,.22), transparent 28%),
+        radial-gradient(circle at 10% 90%, rgba(42,157,143,.18), transparent 30%),
+        linear-gradient(135deg, var(--forest-dark), var(--forest) 65%, #14574e);
+      color: white;
+      padding: 92px 0 86px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(228,189,112,.20);
+      border-radius: 50%;
+      right: -170px;
+      top: -220px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(42,157,143,.25);
+      border-radius: 50%;
+      left: -150px;
+      bottom: -140px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 15px;
+      border: 1px solid rgba(228,189,112,.45);
+      border-radius: 50px;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      max-width: 900px;
+      margin: 0 0 24px;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.06;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 790px;
+      margin: 0;
+      color: #d9e7e3;
+      font-size: 18px;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    .hero-pills span {
+      padding: 9px 14px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      color: #e7eee9;
+      font-size: 13px;
+    }
+
+    /* INTRO */
+
+    .intro {
+      margin-top: -38px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .intro-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .intro-box strong {
+      color: var(--forest);
+    }
+
+    /* MAIN */
+
+    main {
+      padding: 76px 0;
+    }
+
+    section {
+      margin-bottom: 68px;
+    }
+
+    h2 {
+      color: var(--forest);
+      font-size: clamp(29px, 4vw, 42px);
+      line-height: 1.18;
+      letter-spacing: -.8px;
+      margin: 0 0 20px;
+    }
+
+    h3 {
+      color: var(--forest);
+      font-size: 22px;
+      line-height: 1.3;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 850px;
+    }
+
+    /* PROCESS GRID */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .process-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 23px;
+      box-shadow: 0 9px 28px rgba(16,60,54,.055);
+    }
+
+    .process-number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      background: var(--forest);
+      color: var(--gold-light);
+      border-radius: 11px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .process-card h3 {
+      margin: 0 0 7px;
+      font-size: 17px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    /* FORMULA */
+
+    .formula-box {
+      margin: 30px 0;
+      background: linear-gradient(135deg, var(--forest-dark), var(--forest));
+      color: white;
+      padding: 32px;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .formula-title {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .formula {
+      font-size: clamp(21px, 3vw, 31px);
+      line-height: 1.45;
+      font-weight: 800;
+      color: white;
+    }
+
+    .formula-note {
+      color: #c9dbd6;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    /* TWO COLUMN */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-items: start;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 10px 32px rgba(16,60,54,.055);
+    }
+
+    .card h3:first-child {
+      margin-top: 0;
+    }
+
+    /* NUMBERED LIST */
+
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+      margin: 28px 0;
+    }
+
+    .steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 18px 20px 18px 68px;
+      margin-bottom: 12px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 18px;
+      top: 17px;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--soft-green);
+      color: var(--emerald);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    /* CALCULATION */
+
+    .calculation {
+      background: var(--soft-gold);
+      border: 1px solid #ead9b5;
+      border-radius: 22px;
+      padding: 30px;
+      margin: 30px 0;
+    }
+
+    .calculation h3 {
+      margin-top: 0;
+    }
+
+    .equation {
+      background: white;
+      border-left: 5px solid var(--gold);
+      padding: 18px 20px;
+      margin: 16px 0;
+      border-radius: 0 12px 12px 0;
+      font-weight: 800;
+      color: var(--forest);
+    }
+
+    /* TABLE */
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: white;
+      margin: 28px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+    }
+
+    th {
+      background: var(--forest);
+      color: white;
+      text-align: left;
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    td {
+      padding: 16px;
+      border-bottom: 1px solid #eee5d7;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* PURITY CARDS */
+
+    .purity-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 28px;
+    }
+
+    .purity-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px 18px;
+      text-align: center;
+    }
+
+    .purity-value {
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 9px;
+    }
+
+    .purity-card strong {
+      color: var(--forest);
+      display: block;
+    }
+
+    .purity-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    /* CALLOUT */
+
+    .callout {
+      margin: 30px 0;
+      padding: 24px 27px;
+      border-left: 5px solid var(--turquoise);
+      background: var(--soft-blue);
+      border-radius: 0 17px 17px 0;
+    }
+
+    .callout strong {
+      color: var(--forest);
+    }
+
+    /* FACT GRID */
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+      margin-top: 27px;
+    }
+
+    .fact {
+      background: var(--forest);
+      color: white;
+      padding: 25px;
+      border-radius: 18px;
+    }
+
+    .fact strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .fact p {
+      color: #d4e1dd;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    /* MISTAKES */
+
+    .mistake-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .mistake {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 23px;
+      border-radius: 17px;
+    }
+
+    .mistake-label {
+      color: var(--danger);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .mistake h3 {
+      margin: 5px 0 8px;
+      font-size: 18px;
+    }
+
+    .mistake p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    /* FAQ */
+
+    .faq {
+      border-top: 1px solid var(--border);
+      margin-top: 25px;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-top: none;
+      padding: 21px 24px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--forest);
+      font-weight: 850;
+    }
+
+    details p {
+      color: var(--muted);
+      margin: 12px 0 0;
+      font-size: 15px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--forest-dark);
+      color: #cadbd6;
+      padding: 55px 0;
+    }
+
+    footer h2 {
+      color: white;
+      font-size: 27px;
+    }
+
+    footer p {
+      max-width: 820px;
+      font-size: 14px;
+    }
+
+    .footer-note {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding-top: 20px;
+      margin-top: 30px;
+      color: #91a9a3;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .process-grid,
+      .purity-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .fact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 24px, 1140px);
+      }
+
+      .hero {
+        padding: 65px 0 60px;
+      }
+
+      .hero h1 {
+        font-size: 41px;
+      }
+
+      .intro-box,
+      .card {
+        padding: 23px;
+      }
+
+      .process-grid,
+      .purity-grid,
+      .mistake-grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 50px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <header class="hero">
+    <div class="container">
+
+      <span class="eyebrow">UAE Gold Pricing Guide</span>
+
+      <h1>How Gold Prices Are Calculated in the UAE</h1>
+
+      <p>
+        Gold prices in the UAE are influenced by the international gold market,
+        currency conversion, purity, weight, and the way a product is sold.
+        Understanding the calculation makes it easier to interpret a quoted
+        price per gram, compare karats, and separate the value of the metal
+        from additional jewellery costs.
+      </p>
+
+      <div class="hero-pills">
+        <span>International Gold Price</span>
+        <span>USD to AED</span>
+        <span>Gram & Troy Ounce</span>
+        <span>Gold Purity</span>
+        <span>Making Charges</span>
+        <span>VAT</span>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- INTRO -->
+
+  <div class="container intro">
+    <div class="intro-box">
+
+      <strong>In simple terms:</strong>
+      the UAE gold price per gram is generally derived from a market gold quotation,
+      converted into the relevant local currency and weight unit, then adjusted for
+      purity when a particular karat is being calculated. The final price of jewellery
+      can contain additional costs that are separate from the underlying metal value.
+
+    </div>
+  </div>
+
+
+  <main>
+
+    <div class="container">
+
+
+      <!-- INTRODUCTION -->
+
+      <section>
+
+        <h2>Why Gold Prices Need a Calculation</h2>
+
+        <p>
+          When people search for the gold price in the UAE, they may see several
+          different numbers. One website might show a price per troy ounce, while
+          another may display the amount per gram in UAE dirhams. Jewellery shops
+          may then quote a different final amount because the product can include
+          workmanship and other applicable charges.
+        </p>
+
+        <p>
+          These numbers are not necessarily contradictory. They can represent
+          different stages of the pricing process. A useful way to understand the
+          system is to start with the international gold quotation and then work
+          through the units, currency, purity, and product-specific costs.
+        </p>
+
+        <p>
+          A UAE gold-price reference such as
+          <a href="https://uaegoldprices.ae/">uaegoldprices.ae</a>
+          can be used to view gold quotations in the local market context, including
+          prices expressed by weight and karat.
+        </p>
+
+        <div class="process-grid">
+
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <h3>Market Price</h3>
+            <p>
+              Start with the relevant international gold quotation.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <h3>Weight Conversion</h3>
+            <p>
+              Convert the troy-ounce quotation into the desired weight.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <h3>Currency</h3>
+            <p>
+              Express the price in UAE dirhams when calculating a local quote.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-number">04</div>
+            <h3>Purity & Costs</h3>
+            <p>
+              Adjust for karat and consider product-specific charges.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- INTERNATIONAL PRICE -->
+
+      <section>
+
+        <h2>Step 1: Start With the International Gold Price</h2>
+
+        <p>
+          Gold is traded internationally, so the starting reference for many local
+          calculations is an international gold quotation. Market prices can move
+          throughout the day as buyers and sellers respond to economic information,
+          interest-rate expectations, currency movements, geopolitical developments,
+          and changes in market demand.
+        </p>
+
+        <p>
+          International gold prices are commonly quoted in US dollars per troy ounce.
+          A troy ounce is different from the ordinary ounce used for many everyday
+          products. One troy ounce contains approximately 31.1035 grams.
+        </p>
+
+        <div class="formula-box">
+
+          <div class="formula-title">Basic Conversion</div>
+
+          <div class="formula">
+            Gold price per gram = Gold price per troy ounce ÷ 31.1035
+          </div>
+
+          <div class="formula-note">
+            This gives an approximate 24K gold price per gram when the starting
+            quotation represents pure gold.
+          </div>
+
+        </div>
+
+        <p>
+          This first calculation does not yet include jewellery workmanship,
+          retailer-specific charges, or other costs. It simply converts the
+          international quotation into a smaller weight unit.
+        </p>
+
+      </section>
+
+
+      <!-- GRAM CALCULATION -->
+
+      <section>
+
+        <h2>Step 2: Convert the Ounce Price to a Gram Price</h2>
+
+        <p>
+          The gram is one of the most useful units for consumers in the UAE because
+          jewellery and smaller quantities of gold are often discussed by weight.
+          Converting an ounce quotation to grams makes the market reference easier
+          to understand.
+        </p>
+
+        <div class="calculation">
+
+          <h3>Example Calculation</h3>
+
+          <p>
+            Imagine an illustrative international gold quotation of
+            <strong>$4,000 per troy ounce</strong>. The number below is only an
+            example for understanding the calculation.
+          </p>
+
+          <div class="equation">
+            $4,000 ÷ 31.1035 = approximately $128.60 per gram
+          </div>
+
+          <p>
+            The result represents an approximate price per gram before converting
+            the amount into AED and before considering the purity of a lower-karat
+            product.
+          </p>
+
+        </div>
+
+        <p>
+          The same approach works in reverse. If you already know the price per gram,
+          multiplying it by approximately 31.1035 gives the equivalent price per
+          troy ounce.
+        </p>
+
+      </section>
+
+
+      <!-- AED -->
+
+      <section>
+
+        <h2>Step 3: Convert the Price Into UAE Dirhams</h2>
+
+        <p>
+          Since consumers in the UAE normally see local prices in UAE dirhams,
+          a dollar-denominated gold quotation must be converted into AED when
+          calculating the local equivalent.
+        </p>
+
+        <p>
+          The UAE dirham is maintained at a fixed exchange-rate relationship with
+          the US dollar. For a simple educational calculation, this makes the
+          USD-to-AED conversion relatively straightforward, although real-world
+          quotations can still vary because of data timing, market conventions,
+          spreads, and the specific source being used.
+        </p>
+
+        <div class="formula-box">
+
+          <div class="formula-title">UAE Price Formula</div>
+
+          <div class="formula">
+            AED per gram = USD per gram × USD/AED exchange rate
+          </div>
+
+          <div class="formula-note">
+            The exact displayed price can differ between sources depending on
+            timestamp, market quotation, and calculation method.
+          </div>
+
+        </div>
+
+        <p>
+          This is why it is important to compare prices that use the same timestamp
+          and quotation type. A gold price captured at one time may differ from
+          another price captured later because the underlying market can move.
+        </p>
+
+      </section>
+
+
+      <!-- PURITY -->
+
+      <section>
+
+        <h2>Step 4: Adjust the Price for Gold Purity</h2>
+
+        <p>
+          Not every gold product contains the same proportion of pure gold.
+          Karat is used to describe purity, with 24K representing the highest
+          conventional karat designation for commercially traded pure gold.
+          Lower karats contain a mixture of gold and other metals.
+        </p>
+
+        <p>
+          Once the 24K price per gram is known, an approximate theoretical value
+          for another karat can be calculated by multiplying the 24K price by the
+          purity factor.
+        </p>
+
+        <div class="purity-grid">
+
+          <div class="purity-card">
+            <div class="purity-value">24K</div>
+            <strong>999</strong>
+            <span>Approximately 99.9% gold</span>
+          </div>
+
+          <div class="purity-card">
+            <div class="purity-value">22K</div>
+            <strong>916</strong>
+            <span>Approximately 91.7% gold</span>
+          </div>
+
+          <div class="purity-card">
+            <div class="purity-value">21K</div>
+            <strong>875</strong>
+            <span>Approximately 87.5% gold</span>
+          </div>
+
+          <div class="purity-card">
+            <div class="purity-value">18K</div>
+            <strong>750</strong>
+            <span>Approximately 75% gold</span>
+          </div>
+
+        </div>
+
+        <div class="formula-box">
+
+          <div class="formula-title">Karat Calculation</div>
+
+          <div class="formula">
+            Lower-karat price ≈ 24K price × purity percentage
+          </div>
+
+          <div class="formula-note">
+            The calculation estimates the metal value. A retail jewellery price
+            may contain additional components.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- KARAT EXAMPLE -->
+
+      <section>
+
+        <h2>Example: Calculating a 21K Gold Price</h2>
+
+        <p>
+          Suppose an illustrative 24K gold price is AED 500 per gram. To estimate
+          the theoretical metal value of 21K gold, use the approximate purity
+          factor of 0.875.
+        </p>
+
+        <div class="calculation">
+
+          <h3>21K Example</h3>
+
+          <div class="equation">
+            AED 500 × 0.875 = AED 437.50 per gram
+          </div>
+
+          <p>
+            This is a simplified metal-value calculation. It does not mean that
+            every 21K jewellery item in a UAE shop will be sold for exactly
+            AED 437.50 per gram.
+          </p>
+
+        </div>
+
+        <p>
+          A jewellery item can have a different final price because the seller may
+          include making charges, design costs, retailer margins, taxes where
+          applicable, or other commercial components.
+        </p>
+
+      </section>
+
+
+      <!-- WEIGHT -->
+
+      <section>
+
+        <h2>Step 5: Multiply by the Weight</h2>
+
+        <p>
+          After determining the approximate price per gram for the relevant purity,
+          the next step is to multiply it by the weight of the gold.
+        </p>
+
+        <div class="formula-box">
+
+          <div class="formula-title">Weight Calculation</div>
+
+          <div class="formula">
+            Metal value = Price per gram × Gold weight in grams
+          </div>
+
+        </div>
+
+        <p>
+          For example, if an illustrative 21K metal value is AED 437.50 per gram
+          and a piece weighs 8 grams:
+        </p>
+
+        <div class="equation">
+          AED 437.50 × 8 grams = AED 3,500
+        </div>
+
+        <p>
+          Again, AED 3,500 represents the simplified underlying metal value in this
+          example. It is not automatically the final amount that a customer would
+          pay for a finished jewellery item.
+        </p>
+
+      </section>
+
+
+      <!-- JEWELLERY -->
+
+      <section>
+
+        <h2>Why Jewellery Prices Can Be Higher Than the Gold Rate</h2>
+
+        <p>
+          A common source of confusion is the difference between a published gold
+          rate and the price of a finished jewellery item. The published rate is
+          generally a reference for the value of the gold itself, while jewellery
+          involves additional work and commercial considerations.
+        </p>
+
+        <div class="two-col">
+
+          <div class="card">
+
+            <h3>Metal value</h3>
+
+            <p>
+              This is the theoretical value of the gold content based on weight,
+              purity, and the applicable gold price.
+            </p>
+
+            <ul>
+              <li>Gold market quotation</li>
+              <li>Weight</li>
+              <li>Karat or purity</li>
+              <li>Currency conversion</li>
+            </ul>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Finished product cost</h3>
+
+            <p>
+              A jewellery item can contain additional costs associated with turning
+              raw material into a finished product.
+            </p>
+
+            <ul>
+              <li>Making or manufacturing charges</li>
+              <li>Design and craftsmanship</li>
+              <li>Retailer margin</li>
+              <li>Applicable taxes and other charges</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <p>
+          The UAE Federal Tax Authority explains that gold jewellery transactions
+          can involve both the gold component and a making charge, and its guidance
+          addresses how VAT treatment applies to precious goods and making services.
+          
+        </p>
+
+      </section>
+
+
+      <!-- MAKING CHARGES -->
+
+      <section>
+
+        <h2>Understanding Making Charges</h2>
+
+        <p>
+          Making charges are associated with the work involved in producing or
+          finishing jewellery. The charge can vary depending on the design,
+          workmanship, manufacturing process, and seller.
+        </p>
+
+        <p>
+          The Federal Tax Authority notes that jewellers may show the gold price
+          and making charge separately on an invoice, while in other situations
+          they may present a combined amount. 
+        </p>
+
+        <div class="callout">
+
+          <strong>Important:</strong>
+          Do not compare the headline gold rate with the total price of a finished
+          jewellery item without checking what is included in the quoted amount.
+
+        </div>
+
+        <p>
+          Two jewellery pieces with the same weight and karat can therefore have
+          different final prices if their designs, workmanship, or commercial
+          terms are different.
+        </p>
+
+      </section>
+
+
+      <!-- VAT -->
+
+      <section>
+
+        <h2>Where VAT Fits Into the Calculation</h2>
+
+        <p>
+          VAT is another part of the UAE pricing framework that needs to be
+          understood separately from the underlying international gold price.
+          The Federal Tax Authority states that VAT is generally applied at 5%
+          to taxable supplies unless a specific exemption or zero-rate applies.
+         
+        </p>
+
+        <p>
+          Precious metals have specific VAT rules. The FTA explains that certain
+          investment precious metals meeting the applicable requirements, including
+          qualifying gold of at least 99% purity, can fall under the zero-rate
+          treatment. 
+        </p>
+
+        <p>
+          Jewellery and making services can have different treatment, so consumers
+          should not assume that the tax treatment of qualifying investment gold
+          automatically applies to every jewellery purchase.
+        </p>
+
+        <div class="callout">
+
+          <strong>Practical approach:</strong>
+          When checking a jewellery invoice, distinguish the gold value, making
+          charge, and any applicable VAT rather than treating every amount as
+          the market gold rate.
+
+        </div>
+
+      </section>
+
+
+      <!-- COMPLETE FORMULA -->
+
+      <section>
+
+        <h2>The Complete Simplified Calculation</h2>
+
+        <p>
+          Putting the main stages together gives a useful framework for understanding
+          how a UAE gold price can be calculated.
+        </p>
+
+        <ol class="steps">
+
+          <li>
+            <strong>Find the international gold quotation.</strong>
+            Usually this is expressed as a price per troy ounce.
+          </li>
+
+          <li>
+            <strong>Convert the troy ounce into grams.</strong>
+            Divide the ounce price by approximately 31.1035.
+          </li>
+
+          <li>
+            <strong>Convert the result into AED.</strong>
+            Apply the relevant USD-to-AED conversion.
+          </li>
+
+          <li>
+            <strong>Adjust for purity.</strong>
+            Multiply the 24K value by the relevant karat purity factor.
+          </li>
+
+          <li>
+            <strong>Multiply by the item's weight.</strong>
+            This gives the estimated underlying metal value.
+          </li>
+
+          <li>
+            <strong>Add product-specific costs.</strong>
+            Jewellery may include making charges and other applicable costs.
+          </li>
+
+          <li>
+            <strong>Check applicable VAT treatment.</strong>
+            Tax treatment depends on the nature of the supply and applicable UAE
+            rules.
+          </li>
+
+        </ol>
+
+      </section>
+
+
+      <!-- MARKET DIFFERENCES -->
+
+      <section>
+
+        <h2>Why Gold Prices Can Change During the Day</h2>
+
+        <p>
+          Gold is traded in an active global market, so its quoted price can move
+          throughout the day. When the underlying international quotation changes,
+          a UAE gold-price reference can change as well.
+        </p>
+
+        <p>
+          Currency effects can also influence local quotations when prices are
+          converted from an international currency. This means that checking the
+          exact update time is important when comparing two gold-price pages.
+        </p>
+
+        <div class="fact-grid">
+
+          <div class="fact">
+            <strong>Global markets</strong>
+            <p>
+              International trading activity can change the reference gold price.
+            </p>
+          </div>
+
+          <div class="fact">
+            <strong>Currency</strong>
+            <p>
+              Currency conversion connects international quotations with local
+              AED prices.
+            </p>
+          </div>
+
+          <div class="fact">
+            <strong>Local pricing</strong>
+            <p>
+              Retail prices can contain costs that are not part of the raw market
+              gold quotation.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- COMPARISON -->
+
+      <section>
+
+        <h2>Gold Rate vs Jewellery Price</h2>
+
+        <p>
+          The terms “gold rate” and “jewellery price” are sometimes used as though
+          they mean the same thing. They do not necessarily represent the same
+          calculation.
+        </p>
+
+        <div class="table-wrap">
+
+          <table>
+
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Gold Rate</th>
+                <th>Finished Jewellery</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Market gold value</td>
+                <td>Core component</td>
+                <td>Included</td>
+              </tr>
+
+              <tr>
+                <td>Weight</td>
+                <td>Used in calculation</td>
+                <td>Used in calculation</td>
+              </tr>
+
+              <tr>
+                <td>Purity</td>
+                <td>Important</td>
+                <td>Important</td>
+              </tr>
+
+              <tr>
+                <td>Making charge</td>
+                <td>Normally not part of the raw market quote</td>
+                <td>May apply</td>
+              </tr>
+
+              <tr>
+                <td>Retail margin</td>
+                <td>Not represented by a simple market quotation</td>
+                <td>May form part of final pricing</td>
+              </tr>
+
+              <tr>
+                <td>VAT</td>
+                <td>Depends on the specific supply</td>
+                <td>Depends on the applicable tax treatment</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- MISTAKES -->
+
+      <section>
+
+        <h2>Common Mistakes When Calculating UAE Gold Prices</h2>
+
+        <div class="mistake-grid">
+
+          <div class="mistake">
+
+            <div class="mistake-label">Mistake 01</div>
+
+            <h3>Using the ordinary ounce</h3>
+
+            <p>
+              Gold calculations normally use the troy ounce, which weighs about
+              31.1035 grams.
+            </p>
+
+          </div>
+
+          <div class="mistake">
+
+            <div class="mistake-label">Mistake 02</div>
+
+            <h3>Ignoring purity</h3>
+
+            <p>
+              A 21K item does not contain the same proportion of gold as a 24K item.
+            </p>
+
+          </div>
+
+          <div class="mistake">
+
+            <div class="mistake-label">Mistake 03</div>
+
+            <h3>Confusing metal value with retail price</h3>
+
+            <p>
+              Jewellery can include workmanship and other costs beyond the underlying
+              gold value.
+            </p>
+
+          </div>
+
+          <div class="mistake">
+
+            <div class="mistake-label">Mistake 04</div>
+
+            <h3>Ignoring the update time</h3>
+
+            <p>
+              Gold prices can move, so two quotations recorded at different times
+              may not match.
+            </p>
+
+          </div>
+
+          <div class="mistake">
+
+            <div class="mistake-label">Mistake 05</div>
+
+            <h3>Comparing different units</h3>
+
+            <p>
+              AED per gram and USD per troy ounce cannot be compared directly without
+              conversion.
+            </p>
+
+          </div>
+
+          <div class="mistake">
+
+            <div class="mistake-label">Mistake 06</div>
+
+            <h3>Assuming every gold product has the same tax treatment</h3>
+
+            <p>
+              UAE VAT rules can differ according to the nature and conditions of
+              the supply.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- QUICK REFERENCE -->
+
+      <section>
+
+        <h2>Quick Reference Formula</h2>
+
+        <div class="card">
+
+          <h3>International price to gram</h3>
+
+          <p>
+            Gold price per gram ≈ Gold price per troy ounce ÷ 31.1035
+          </p>
+
+          <h3>Dollar to AED</h3>
+
+          <p>
+            AED gold price per gram ≈ USD gold price per gram × applicable
+            USD/AED conversion
+          </p>
+
+          <h3>Purity adjustment</h3>
+
+          <p>
+            Karat gold value ≈ 24K price per gram × purity factor
+          </p>
+
+          <h3>Total metal value</h3>
+
+          <p>
+            Metal value ≈ adjusted price per gram × weight
+          </p>
+
+          <h3>Final jewellery price</h3>
+
+          <p>
+            Final price can additionally reflect making charges and other applicable
+            commercial or tax components.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- FAQ -->
+
+      <section>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+
+          <details>
+            <summary>How is gold price per gram calculated in the UAE?</summary>
+
+            <p>
+              A simplified calculation starts with the international gold price per
+              troy ounce, divides it by approximately 31.1035 to obtain a gram price,
+              converts the amount into AED, and then adjusts for the purity when a
+              lower-karat price is required.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>How many grams are in a troy ounce of gold?</summary>
+
+            <p>
+              One troy ounce contains approximately 31.1035 grams. This is the
+              conversion normally used when converting international gold quotations
+              from ounces to grams.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>Why is 24K used as the starting point?</summary>
+
+            <p>
+              24K represents the highest conventional karat designation and is commonly
+              used as the reference when calculating the theoretical value of lower
+              karats through purity factors.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>Why is 21K gold cheaper per gram than 24K?</summary>
+
+            <p>
+              21K contains a lower proportion of gold than 24K. Its theoretical metal
+              value can therefore be calculated using its approximate 87.5% purity
+              factor.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>Why does jewellery cost more than the gold rate?</summary>
+
+            <p>
+              Finished jewellery can include making charges, design or manufacturing
+              costs, retailer margins, and applicable taxes or other charges.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>Does the UAE gold price remain the same all day?</summary>
+
+            <p>
+              Not necessarily. Gold is actively traded internationally, and market
+              quotations can change during the day. Local references can therefore
+              update as the underlying market changes.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>Does every gold product have the same VAT treatment?</summary>
+
+            <p>
+              No. UAE VAT treatment depends on the nature of the supply and the
+              applicable requirements. Certain qualifying investment precious metals
+              have specific zero-rate treatment, while other supplies can be treated
+              differently.
+            </p>
+          </details>
+
+
+          <details>
+            <summary>Can I calculate the value of gold myself?</summary>
+
+            <p>
+              Yes. Once you know the relevant gold quotation, weight, currency,
+              and purity, the basic metal-value calculation is straightforward.
+              The final retail price may still contain additional costs.
+            </p>
+          </details>
+
+        </div>
+
+      </section>
+
+
+      <!-- CONCLUSION -->
+
+      <section>
+
+        <h2>Understanding the UAE Gold Price Calculation</h2>
+
+        <p>
+          The UAE gold-price calculation becomes much easier when it is viewed as
+          a sequence rather than as one complicated number. The international gold
+          quotation provides the starting reference. The troy-ounce figure can then
+          be converted into grams, the currency can be expressed in AED, and the
+          result can be adjusted according to the purity of the gold.
+        </p>
+
+        <p>
+          For a finished jewellery item, the calculation does not necessarily end
+          there. Making charges, retail pricing, and applicable VAT treatment can
+          influence the amount shown on an invoice.
+        </p>
+
+        <p>
+          The most useful habit is therefore to separate the underlying metal value
+          from the final product price. Once those components are understood, it
+          becomes much easier to compare gold quotations, understand karat
+          differences, and evaluate a jewellery price in its proper context.
+        </p>
+
+      </section>
+
+    </div>
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <h2>Gold Pricing Starts With the Basics</h2>
+
+      <p>
+        Gold prices in the UAE are connected to international market quotations,
+        weight conversions, currency, purity, and local pricing factors. Understanding
+        these components provides a clearer way to interpret gold rates and distinguish
+        the value of the metal from the price of a finished jewellery product.
+      </p>
+
+      <div class="footer-note">
+        Educational information only. Gold prices can change over time, and the
+        calculation of a final retail price depends on the quotation, weight,
+        purity, seller, applicable charges, and relevant UAE tax rules.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
